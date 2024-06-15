@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+
+}
+button,select :hover{
+    cursor: pointer;
+}
+:root {
+    --font: 48px;
+    --secfont: 24px;
+}
+
+body {
+    background-color: black;
+}
+
+.bg {
+    background-image: url("assets/bg.jpg");
+    height: 43.6rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main {
+    height: 43.6rem;
+    width: 100%;
+    opacity: 0.65;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+.nav {
+    max-width: 75vw;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 1%;
+    position: relative;
+}
+
+.nav span img {
+    width: 150px;
+}
+
+.optioner {
+    color: white;
+    display: flex;
+}
+
+.option-sel {
+    position: relative;
+    z-index: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 3px;
+    padding-left: 17px;
+    border-radius: 4px;
+}
+
+.option-sel option {
+    background-color: black;
+}
+
+.option-svg {
+    display: inline;
+    position: absolute;
+    padding-top: 3px;
+}
+
+.main-text {
+    height: 70%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    color: aliceblue;
+    gap: 20px;
+    padding: 23px;
+
+}
+
+.main-text>:first-child {
+    font-weight: 900;
+    font-size: var(--font);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-text> :nth-child(2) {
+    font-weight: 600;
+    font-size: var(--secfont);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.main-text> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgb(44, 44, 44);
+}
+
+.signin,
+.btn {
+    padding: 3px 8px;
+    border: none;
+    color: white;
+    background-color: red;
+    border-radius: 4px;
+}
+
+.la {
+    background-color: #fff;
+    color: black;
+}
+
+.red {
+    padding: 14px;
+    font-size: x-large;
+}
+
+input {
+    padding: 14px;
+    padding-right: 120px;
+    font-size: large;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.3);
+    box-shadow: none;
+    color: #fff;
+    margin-right: 9px;
+    border: 1px solid rgba(255, 255, 255, 0.662);
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.first {
+    color: #fff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 3.5rem 0;
+    position: relative;
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+.first-text {
+    justify-content: center;
+    flex: 1;
+    height: 63vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: auto;
+
+}
+
+.video1 {
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    position: absolute;
+    top: 21%;
+    right: 14%;
+
+}
+
+.first-img {
+    flex: 1;
+    position: relative;
+}
+
+.first>div :nth-child(1) {
+    font-size: var(--font);
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.first>div :nth-child(2) {
+    font-size: var(--secfont);
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.video2 {
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 69%;
+    max-height: 45%;
+    position: absolute;
+    top: 9%;
+    right: 16%;
+}
+
+.faq {
+    color: #fff;
+    max-width: 75vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+
+.faq h1 {
+    margin-bottom: 2%;
+    font-size: var(--font);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.faqboxes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.box button {
+    display: flex;
+    font-size: var(--secfont);
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    color: #fff;
+    background-color: rgb(45, 45, 45);
+    box-shadow: none;
+    border: none;
+    padding: 0 6px;
+    border-bottom: 1px solid black;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.box button :nth-child(2) {
+    text-align: center;
+    margin: 2%;
+}
+
+.box button :nth-child(1) {
+    text-align: center;
+    margin: auto 2%;
+}
+
+.ans {
+    font-size: var(--secfont);
+    text-align: justify;
+    padding: 2%;
+    display: none;
+    background-color: rgb(45, 45, 45);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    overflow: hidden;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+      opacity: 0;
+
+}
+
+.faqboxes li {
+    margin-bottom: 1%;
+}
+
+.last {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    font-size: var(--secfont);
+}
+
+footer {
+    max-width: 80vw;
+    margin: 4% auto;
+    color: #fff;
+    font-weight: lighter;
+}
+
+footer div {
+    width: 100%;
+    padding-bottom: 1%;
+}
+
+a {
+    color: white;
+}
+
+.footer-ul {
+    display: inline-flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-ul li {
+    width: 25%;
+    padding-bottom: 1%;
+}
+
+.selector {
+    display: flex;
+}
+
+.selector-svg {
+    padding-top: 0.8%;
+}
+
+.selector-sel {
+    position: absolute;
+    z-index: 1;
+    padding: 0.8% 1.8%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.selector-sel option {
+    background-color: black;
+}
+
+@media screen and (max-width:400px) {
+    .first {
+        flex-direction: column;
+    }
+
+    .nav span img {
+        width: 96px;
+    }
+    :root{
+        --font: 34px;
+        --secfont: 15px;
+    }
+    .footer-ul li {
+        width: 48%;
+        padding-bottom: 5%;
+    }
+}
+.ans.show {
+    display: block;
+    max-height: 500px; /* Adjust this value according to the content height */
+    opacity: 1;
+  }
+  .rotate {
+    transform: rotate(50deg);
+    transition: transform 0.3s ease;
+  }
